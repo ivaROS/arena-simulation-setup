@@ -15,7 +15,7 @@
           "name": "Visitor_1",
           "pos": [10, 0, 0],
           "type": "adult",
-          "model": "actor1",
+          "model": "person_single_circle",
           "waypoints": [
               [-10, 0, 0],
               [10, 0, 0]
