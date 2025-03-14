@@ -21,9 +21,9 @@
 
   </group>
 
-  <node pkg="all_in_one_planner" type="all_in_one_node.py" name="all_in_one_node" output="screen">
-    <param name="robot_model" value="$(arg model)" />
-  </node>
+  <node pkg="rlca-ros" type="rlca_node_tb3.py" name="rl_collision_avoidance" output="screen">
+    <param name="max_vel_x" value="$(arg speed)" />
+  </node>  
 
   <!-- spacial_horizon -->
   <node pkg="spacial_horizon" type="spacial_horizon_node" name="spacial_horizon_node" output="screen">
