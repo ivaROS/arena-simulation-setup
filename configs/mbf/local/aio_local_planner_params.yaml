@@ -1,14 +1,21 @@
-# controllers:
-#   - name: TrajectoryPlannerROS
-#     type: base_local_planner/TrajectoryPlannerROS
+controllers:
+  - name: TrajectoryPlannerROS
+    type: base_local_planner/TrajectoryPlannerROS
+    
+planners:
+  - name: NavfnROS
+    type: navfn/NavfnROS
 
-# planners:
-#   - name: NavfnROS
-#     type: navfn/NavfnROS
+controller_frequency: 5.0
+planner_frequency: 0.0
+recovery_behavior_enabled: true
 
-# controller_frequency: 5.0
-# planner_frequency: 0.0
+recovery_behaviors:
+  # - name: 'clear_costmap'
+  #   type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  - name: 'rotate_recovery'
+    type: 'rotate_recovery/RotateRecovery'
 
-# TrajectoryPlannerROS:
-#   odom_topic: odom
-#   max_vel_x: 1.0
+TrajectoryPlannerROS:
+  odom_topic: odom
+  max_vel_x: 1.0

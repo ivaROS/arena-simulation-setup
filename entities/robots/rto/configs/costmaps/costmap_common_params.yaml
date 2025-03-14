@@ -30,9 +30,9 @@ obstacle_layer:
 
   observation_sources: scan
   scan:
-    sensor_frame: $(arg frame)hokuyo_link,
-    data_type: LaserScan,
-    topic: $(arg namespace)/scan,
-    marking: true,
-    clearing: true,
+    sensor_frame: $(arg frame)hokuyo_link
+    data_type: LaserScan
+    topic: $(arg namespace)/scan
+    marking: true
+    clearing: true
 

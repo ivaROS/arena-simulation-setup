@@ -21,19 +21,37 @@
 
   </group>
 
-  <arg name="ns" default="$(arg namespace)"/>
-  <arg name="config_path" default="$(find all_in_one_planner)/light_scan_sim/scan_configs/rto_params_new.yaml"/>
+  <!-- <arg name="ns" default="$(arg namespace)"/> -->
+  <!-- <arg name="robot_frame" default="base_link" /> -->
+  <!-- <arg name="base_footprint" default="base_link" /> -->
+  <!-- <arg name="scan_frame" default="hokuyo_link" /> -->
+  <!-- <arg name="config_path" default="$(find arena_local_planner_drl)/configs/all_in_one_hyperparameters/base_local_planner_parameters/teb_dynamic_obst.yaml"/> -->
+  <!-- <arg name="config_path" default="$(find all_in_one_planner)/AIO_agents/rto_s+d/teb_rto.yaml"/> -->
 
-  <node pkg="all_in_one_local_planner_interface" type="all_in_one_local_planner_node" respawn="false"
-        name="local_planner_node_teb" output="screen" ns="$(arg ns)">
+  <!-- <node pkg="all_in_one_local_planner_interface" type="all_in_one_local_planner_node" respawn="false" -->
+        <!-- name="all_in_one_local_planner_node" output="screen"> -->
       <!-- load params -->
-      <rosparam file="$(arg config_path)" command="load"/>
+      <!-- <rosparam file="$(arg config_path)" command="load"/> -->
+
+      <!-- Set namespace specific parameters -->
+      <!-- local costmap params -->
+      <!-- <param name="local_costmap/scan/sensor_frame" value="$(arg scan_frame)"/> -->
+      <!-- <param name="local_costmap/global_frame" value="$(arg robot_frame)"/> -->
+      <!-- <param name="local_costmap/robot_base_frame" value="$(arg base_footprint)"/> -->
+
+      <!-- param only relevant for teb -->
+      <!-- <param name="$teb_local_planner/map_frame" value="$(arg robot_frame)"/> -->
 
       <!-- remaps due to namespace -->
-      <remap from="/clock" to="/$(arg ns)/clock"/>
-      <remap from="map" to="/$(arg ns)/map"/>
+      <!-- <remap from="/clock" to="/$(arg ns)/clock"/>
+      <remap from="map" to="/$(arg ns)/map"/> -->
 
-  </node>
+  <!-- </node> -->
+
+  <node pkg="rlca-ros" type="rlca_node_tb3.py" name="rl_collision_avoidance" output="screen">
+    <param name="max_vel_x" value="$(arg speed)" />
+  </node>  
+
 
   <!-- spacial_horizon -->
   <node pkg="spacial_horizon" type="spacial_horizon_node" name="spacial_horizon_node" output="screen">

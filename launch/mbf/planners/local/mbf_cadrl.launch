@@ -27,7 +27,7 @@
         
         <!-- Publications -->
         <remap from="~other_vels" to="other_vels"/>
-        <remap from="~nn_cmd_vel" to="$(arg namespace)/cmd_vel"/>
+        <remap from="~nn_cmd_vel" to="$(arg namespace)/learned_cmd_vel"/>
         <remap from="~pose_marker" to="pose_marker"/>
         <remap from="~path_marker" to="path_marker"/>
         <remap from="~goal_path_marker" to="goal_path_marker"/>
