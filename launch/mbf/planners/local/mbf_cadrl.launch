@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <node name="mbf_cmd_vel_relay" pkg="topic_tools" type="relay" args="cmd_vel_internal cmd_vel" />
+
+  <!-- Arguments -->
+  <arg name="model" default="burger"/>
+  <arg name="speed" default="0.12"/>
+  <arg name="namespace" />
+  <arg name="frame" />
+  <arg name="move_forward_only" default="false"/>
+
+  <group ns="move_base_flex">
+   <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/rlca_planner_params.yaml"
+      command="load" subst_value="True" />
+    <rosparam
+      file="$(find arena_simulation_setup)/entities/robots/$(arg model)/configs/mbf/rlca_local_planner_params.yaml"
+      command="load" subst_value="True" />
+
+    <param name="base_local_planner" value="TrajectoryPlannerROS" />
+
+  </group>
+
+    <arg name="file" default="cadrl_node_tb3.py"/>
+    <!-- Launch neural net ros wrapper -->
+    <node pkg="cadrl-ros" type="cadrl_node_tb3.py" name="cadrl_node" output="screen" ns="/cadrl">
+        
+        <!-- Publications -->
+        <remap from="~other_vels" to="other_vels"/>
+        <remap from="~nn_cmd_vel" to="$(arg namespace)/cmd_vel"/>
+        <remap from="~pose_marker" to="pose_marker"/>
+        <remap from="~path_marker" to="path_marker"/>
+        <remap from="~goal_path_marker" to="goal_path_marker"/>
+        <remap from="~agent_marker" to="other_agents_marker"/>
+        <remap from="~agent_markers" to="other_agents_markers"/>
+        
+        <!-- Subscriptions -->
+        <remap from="~pose" to="$(arg namespace)/odom"/>
+        <!-- <remap from="~velocity" to="velocity"/> -->
+        <!-- <remap from="~safe_actions" to="local_path_finder/safe_actions"/> -->
+        <!-- <remap from="~planner_mode" to="planner_fsm/mode"/> -->
+        <remap from="~goal" to="$(arg namespace)/move_base_simple/goal"/>
+        <remap from="~subgoal" to="$(arg namespace)/subgoal"/>
+        <remap from="~clusters" to="/obst_odom"/>
+        <remap from="~peds" to="ped_manager/ped_recent"/>
+        
+        <!-- Parameters -->
+        <param name="~speed" value="$(arg speed)"/>
+        <param name="~robot_model" value="$(arg model)"/>
+
+    </node>
+
+  <!-- spacial_horizon -->
+  <node pkg="spacial_horizon" type="spacial_horizon_node" name="spacial_horizon_node" output="screen">
+    <rosparam file="$(find arena_simulation_setup)/entities/robots/$(arg model)/configs/mbf/plan_fsm_param.yaml" command="load" />
+    <remap from="$(arg namespace)/goal" to="$(arg namespace)/move_base_simple/goal" />
+    <remap from="/move_base/NavfnROS/make_plan" to="$(arg namespace)/move_base_flex/NavfnROS/make_plan" />
+    <remap from="initialpose" to="/initialpose" />
+  </node>
+</launch>
