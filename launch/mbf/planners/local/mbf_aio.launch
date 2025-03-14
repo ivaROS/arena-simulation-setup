@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <node name="mbf_cmd_vel_relay" pkg="topic_tools" type="relay" args="cmd_vel_internal cmd_vel" />
+
+  <!-- Arguments -->
+  <arg name="model" default="burger"/>
+  <arg name="speed" />
+  <arg name="namespace" />
+  <arg name="frame" />
+  <arg name="move_forward_only" default="false"/>
+
+  <group ns="move_base_flex">
+   <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/aio_local_planner_params.yaml"
+      command="load" subst_value="True" />
+    <rosparam
+      file="$(find arena_simulation_setup)/entities/robots/$(arg model)/configs/mbf/aio_local_planner_params.yaml"
+      command="load" subst_value="True" />
+
+    <param name="base_local_planner" value="TrajectoryPlannerROS" />
+
+  </group>
+
+  <arg name="ns" default="$(arg namespace)"/>
+  <arg name="config_path" default="$(find all_in_one_planner)/light_scan_sim/scan_configs/rto_params_new.yaml"/>
+
+  <node pkg="all_in_one_local_planner_interface" type="all_in_one_local_planner_node" respawn="false"
+        name="local_planner_node_teb" output="screen" ns="$(arg ns)">
+      <!-- load params -->
+      <rosparam file="$(arg config_path)" command="load"/>
+
+      <!-- remaps due to namespace -->
+      <remap from="/clock" to="/$(arg ns)/clock"/>
+      <remap from="map" to="/$(arg ns)/map"/>
+
+  </node>
+
+  <!-- spacial_horizon -->
+  <node pkg="spacial_horizon" type="spacial_horizon_node" name="spacial_horizon_node" output="screen">
+    <rosparam file="$(find arena_simulation_setup)/entities/robots/$(arg model)/configs/mbf/plan_fsm_param.yaml" command="load" />
+    <remap from="$(arg namespace)/goal" to="$(arg namespace)/move_base_simple/goal" />
+    <remap from="/move_base/NavfnROS/make_plan" to="$(arg namespace)/move_base_flex/NavfnROS/make_plan" />
+    <remap from="initialpose" to="/initialpose" />
+  </node>
+</launch>
