@@ -14,7 +14,7 @@ scan:
   {
     sensor_frame: $(arg frame)hokuyo_link,
     data_type: LaserScan,
-    topic: $(arg namespace)/scan,
+    topic: wrong, # $(arg namespace)/scan,
     marking: true,
     clearing: true,
   }
@@ -32,7 +32,7 @@ obstacle_layer:
   scan:
     sensor_frame: $(arg frame)hokuyo_link
     data_type: LaserScan
-    topic: $(arg namespace)/scan
+    topic: wrong # $(arg namespace)/scan
     marking: true
     clearing: true
 
