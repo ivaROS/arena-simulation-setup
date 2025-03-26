@@ -1,55 +1,49 @@
-# Please note that this is a basic parameter file and this config has not yet been configured with this specific robot in mind.
 odom_topic: odom
 map_frame: map
 
 planning_mode: 1
 
-# Trajectory
-teb_autosize: True
-dt_ref: 0.3
+## Trajectory
+teb_autosize: true
+dt_ref: 0.1  # <-- adjusted
 dt_hysteresis: 0.1
-global_plan_overwrite_orientation: True
-allow_init_with_backwards_motion: False
-max_global_plan_lookahead_dist: 0.0
-feasibility_check_no_poses: 2
+# min_samples: 3
+# agent_min_samples: 3
+# max_samples: 500
+global_plan_overwrite_orientation: true
+allow_init_with_backwards_motion: false
 global_plan_viapoint_sep: 0.2
+# via_points_ordered: false
+max_global_plan_lookahead_dist: 0.0
+# global_plan_prune_distance: 1
+# exact_arc_length: false
+# force_reinit_new_goal_dist: 1
+# force_reinit_new_goal_angular: 1.57
+feasibility_check_no_poses: 15  # <-- Increased for stuck detection
+# publish_feedback: false
+# min_resolution_collision_check_angular: 3.14
+control_look_ahead_poses: 15  # <-- Reduced for quicker reactions
+# horizon_reduction_amount: 0.5
+# teb_init_skip_dist: 0.4
+
+## Robot
+type: 0
+max_vel_x: $(arg speed)
+max_vel_x_backwards: 0.2
+max_vel_y: 0.0
+max_vel_theta: 0.3  
+acc_lim_x: 0.5  
+acc_lim_y: 0.5
+acc_lim_theta: 0.3  # <-- Lower angular acceleration
+min_turning_radius: 0
+
 disable_warm_start: True
 shrink_horizon_backup: True
 
-# Robot
-holonomic_robot: true
-type: 0 #(0: Robot, 1: Human)
-max_vel_y: 0.7
-acc_lim_y: 0.3
-max_vel_x: 0.7
-min_vel_x: 0.02
-max_vel_x_backwards: 0.4
-max_vel_theta: 1.2
-min_vel_theta: 0.1
-acc_lim_x: 0.3
-acc_lim_theta: 0.4
-min_turning_radius: 0.0
-footprint_model: # types: "point", "circular", "two_circles", "line", "polygon"
-  type: "circular"
-  radius: 0.34 # for type "circular"
-  line_start: [-0.3, 0.0] # for type "line"
-  line_end: [0.3, 0.0] # for type "line"
-  front_offset: 0.2 # for type "two_circles"
-  front_radius: 0.2 # for type "two_circles"
-  rear_offset: 0.2 # for type "two_circles"
-  rear_radius: 0.2 # for type "two_circles"
-  vertices: [
-      [-0.325, -0.325],
-      [-0.325, 0.325],
-      [0.325, 0.325],
-      [0.46, 0.0],
-      [0.325, -0.325],
-    ] # for type "polygon"
-
 # Agents
 agent_radius: 0.31
-robot_radius: 0.47
-min_agent_dist: 0.4
+robot_radius: 0.4  # <-- Matches true footprint
+min_agent_dist: 0.5  # <-- Increased safety margin
 max_agent_vel_x: 1.3
 max_agent_vel_y: 0.4
 nominal_agent_vel_x: 1.1
@@ -78,7 +72,7 @@ ttc_threshold: 5.0
 ttclosest_threshold: 1.0
 ttcplus_threshold: 5.0
 ttcplus_timer: 1.0
-rel_vel_cost_threshold: 1.5
+rel_vel_cost_threshold: 1.0  # <-- Earlier slowdowns
 visibility_cost_threshold: 2.5
 invisible_human_threshold: 0.8
 min_agent_robot_dist: 0.6
@@ -89,7 +83,7 @@ yaw_goal_tolerance: 0.1
 free_goal_vel: True
 
 # Obstacles
-min_obstacle_dist: 0.2
+min_obstacle_dist: 0.3  # <-- Increased buffer
 include_costmap_obstacles: True
 costmap_obstacles_behind_robot_dist: 0.5
 obstacle_poses_affected: 1
@@ -133,16 +127,16 @@ weight_kinematics_forward_drive: 1.0
 weight_kinematics_turning_radius: 0
 weight_optimaltime: 1.0
 weight_agent_optimaltime: 3.0
-weight_obstacle: 50.0
-weight_dynamic_obstacle: 50
+weight_obstacle: 100.0  # <-- Prioritize obstacles
+weight_dynamic_obstacle: 75.0  # <-- Increased dynamic penalty
 weight_viapoint: 0.05
 weight_agent_viapoint: 0.5
 weight_agent_robot_safety: 2.0
 weight_agent_agent_safety: 2.0
 weight_agent_robot_ttc: 1.0
-weight_agent_robot_rel_vel: 5.0
+weight_agent_robot_rel_vel: 10.0  # <-- Higher relative speed cost
 weight_agent_robot_ttcplus: 1.0
-weight_agent_robot_visibility: 5.0
+weight_agent_robot_visibility: 10.0  # <-- Avoid blind spots
 weight_invisible_human: 2.0
 weight_shortest_path: 0
 selection_alternative_time_cost: False
