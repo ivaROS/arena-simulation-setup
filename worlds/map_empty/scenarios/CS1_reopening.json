@@ -14,13 +14,34 @@
         }
     ],
     "obstacles": {
-        "static": [],
+        "static": [
+            {
+            "name": "shelf1",
+            "model": "long_shelf",
+            "pos": [3.5, 9, 1.5707]
+            },
+            {
+                "name": "shelf2",
+                "model": "long_shelf",
+                "pos": [3.5, 15, 1.5707]
+            },
+            {
+                "name": "shelf3",
+                "model": "long_shelf",
+                "pos": [8.75, 9, 1.5707]
+            },
+            {
+                "name": "shelf4",
+                "model": "long_shelf",
+                "pos": [8.75, 15, 1.5707]
+                }
+            ],
         "dynamic": [
             {
                 "name": "agent0",
                 "pos": [
                     6.5,
-                    9,
+                    10,
                     0.0
                 ],
                 "type": "adult",
@@ -28,12 +49,12 @@
                 "waypoints": [
                     [
                         6.5,
-                        15,
+                        14,
                         0.0
                     ],
                     [
                         6.5,
-                        9,
+                        10,
                         0.0
                     ]
                 ],
@@ -43,7 +64,7 @@
                 "name": "agent1",
                 "pos": [
                     6.0,
-                    15,
+                    14,
                     0.0
                 ],
                 "type": "adult",
@@ -51,12 +72,12 @@
                 "waypoints": [
                     [
                         6.0,
-                        9,
+                        10,
                         0.0
                     ],
                     [
                         6.0,
-                        15,
+                        14,
                         0.0
                     ]
                 ],
