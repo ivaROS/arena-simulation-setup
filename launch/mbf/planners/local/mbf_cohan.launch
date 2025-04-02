@@ -4,8 +4,8 @@
   <node name="mbf_cmd_vel_relay" pkg="topic_tools" type="relay" args="cmd_vel_internal cmd_vel" />
 
   <!-- Arguments -->
-  <arg name="model" default="burger"/>
-  <arg name="speed" default="0.22"/>
+  <arg name="model" />
+  <arg name="speed" />
 
   <arg name="namespace" />
   <arg name="frame" />
