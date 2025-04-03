@@ -1,12 +1,12 @@
 HATebLocalPlannerROS:
   ## Robot
   type: 0
-  max_vel_x: $(arg speed)
-  max_vel_x_backwards: $(arg speed)
-  max_vel_y: $(arg speed)
-  max_vel_theta: 0.3  
-  acc_lim_x: 0.5  
-  acc_lim_y: 0.5
-  acc_lim_theta: 0.3  # <-- Lower angular acceleration
+  max_vel_x: 1.0
+  max_vel_x_backwards: 1.0
+  max_vel_y: 1.0
+  max_vel_theta: 1.0  
+  acc_lim_x: 5.0 
+  acc_lim_y: 5.0
+  acc_lim_theta: 5.0  # <-- Lower angular acceleration
   min_turning_radius: 0
   robot_radius: 0.2  # <-- Matches true footprint
