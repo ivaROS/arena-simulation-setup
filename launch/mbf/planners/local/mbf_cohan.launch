@@ -10,6 +10,8 @@
   <arg name="namespace" />
   <arg name="frame" />
 
+  <node pkg="mod_rto_scan" type="mod_rto_scan" name="mod_rto_scan" output="log" />
+
   <!-- Load usual move base params -->
   <group ns="move_base_flex">
     

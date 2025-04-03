@@ -2,7 +2,7 @@ HATebLocalPlannerROS:
   ## Robot
   type: 0
   max_vel_x: $(arg speed)
-  max_vel_x_backwards: 0.2
+  max_vel_x_backwards: $(arg speed)
   max_vel_y: $(arg speed)
   max_vel_theta: 0.3  
   acc_lim_x: 0.5  
