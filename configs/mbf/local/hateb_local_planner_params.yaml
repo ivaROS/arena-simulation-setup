@@ -6,6 +6,13 @@ controllers:
   - name: HATebLocalPlannerROS
     type: hateb_local_planner/HATebLocalPlannerROS
 
+recovery_behavior_enabled: true
+recovery_behaviors:
+  - name: 'clear_costmap'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  - name: 'rotate_recovery'
+    type: 'rotate_recovery/RotateRecovery'
+
 HATebLocalPlannerROS:
   odom_topic: odom
   # map_frame: map

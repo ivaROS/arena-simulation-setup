@@ -6,6 +6,10 @@ controllers:
   - name: TrajectoryPlannerROS
     type: base_local_planner/TrajectoryPlannerROS
 
+recovery_behavior_enabled: true
+recovery_behaviors:
+  - name: 'rotate_recovery'
+    type: 'rotate_recovery/RotateRecovery'
 
 TrajectoryPlannerROS:
   odom_topic: odom

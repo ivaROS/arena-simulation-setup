@@ -9,6 +9,11 @@ planners:
 controller_frequency: 5.0
 planner_frequency: 0.0
 
+recovery_behavior_enabled: true
+recovery_behaviors:
+  - name: 'rotate_recovery'
+    type: 'rotate_recovery/RotateRecovery'
+
 TrajectoryPlannerROS:
   odom_topic: odom
   max_vel_x: 1.0
