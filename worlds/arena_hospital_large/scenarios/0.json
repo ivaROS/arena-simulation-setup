@@ -2,8 +2,8 @@
     "robots": [
         {
             "start": [
-                15.6,
-                -11.0,
+                -15.5,
+                -7.8,
                 0.0
             ],
             "goal": [
@@ -18,6 +18,52 @@
         "dynamic": [
             {
                 "name": "agent0",
+                "pos": [
+                    11.5,
+                    -2.74,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        11.5,
+                        -2.74,
+                        0.0
+                    ],
+                    [
+                        3.78,
+                        7.93,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "agent1",
+                "pos": [
+                    11.1,
+                    -5.59,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        11.1,
+                        -5.59,
+                        0.0
+                    ],
+                    [
+                        -15.8,
+                        5.21,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "agent2",
                 "pos": [
                     -11.3,
                     2.34,
@@ -40,7 +86,7 @@
                 "waypoint_mode": 1
             },
             {
-                "name": "agent1",
+                "name": "agent3",
                 "pos": [
                     0.571,
                     2.48,
@@ -63,7 +109,7 @@
                 "waypoint_mode": 1
             },
             {
-                "name": "agent2",
+                "name": "agent4",
                 "pos": [
                     0.55,
                     -2.48,
@@ -78,54 +124,8 @@
                         0.0
                     ],
                     [
-                        11.1,
-                        -5.59,
-                        0.0
-                    ]
-                ],
-                "waypoint_mode": 1
-            },
-            {
-                "name": "agent3",
-                "pos": [
-                    -10.2,
-                    -7.54,
-                    0.0
-                ],
-                "type": "adult",
-                "model": "person_single_circle",
-                "waypoints": [
-                    [
                         -10.2,
                         -7.54,
-                        0.0
-                    ],
-                    [
-                        -5.75,
-                        5.14,
-                        0.0
-                    ]
-                ],
-                "waypoint_mode": 1
-            },
-            {
-                "name": "agent4",
-                "pos": [
-                    3.42,
-                    -0.917,
-                    0.0
-                ],
-                "type": "adult",
-                "model": "person_single_circle",
-                "waypoints": [
-                    [
-                        3.42,
-                        -0.917,
-                        0.0
-                    ],
-                    [
-                        -2.17,
-                        2.36,
                         0.0
                     ]
                 ],
@@ -134,21 +134,21 @@
             {
                 "name": "agent5",
                 "pos": [
-                    3.46,
-                    2.85,
+                    -5.75,
+                    5.14,
                     0.0
                 ],
                 "type": "adult",
                 "model": "person_single_circle",
                 "waypoints": [
                     [
-                        3.46,
-                        2.85,
+                        -5.75,
+                        5.14,
                         0.0
                     ],
                     [
-                        11.5,
-                        -2.74,
+                        3.42,
+                        -0.917,
                         0.0
                     ]
                 ],
@@ -156,6 +156,29 @@
             },
             {
                 "name": "agent6",
+                "pos": [
+                    -2.17,
+                    2.36,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        -2.17,
+                        2.36,
+                        0.0
+                    ],
+                    [
+                        3.46,
+                        2.85,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "agent7",
                 "pos": [
                     -15.9,
                     0.0885,
@@ -178,7 +201,7 @@
                 "waypoint_mode": 1
             },
             {
-                "name": "agent7",
+                "name": "agent8",
                 "pos": [
                     8.86,
                     2.35,
@@ -201,7 +224,7 @@
                 "waypoint_mode": 1
             },
             {
-                "name": "agent8",
+                "name": "agent9",
                 "pos": [
                     -5.27,
                     0.275,
@@ -224,7 +247,7 @@
                 "waypoint_mode": 1
             },
             {
-                "name": "agent9",
+                "name": "agent10",
                 "pos": [
                     6.33,
                     -0.335,
@@ -247,7 +270,7 @@
                 "waypoint_mode": 1
             },
             {
-                "name": "agent10",
+                "name": "agent11",
                 "pos": [
                     3.28,
                     -11.2,
@@ -270,7 +293,7 @@
                 "waypoint_mode": 1
             },
             {
-                "name": "agent11",
+                "name": "agent12",
                 "pos": [
                     15.5,
                     5.37,
@@ -282,29 +305,6 @@
                     [
                         15.5,
                         5.37,
-                        0.0
-                    ],
-                    [
-                        3.78,
-                        7.93,
-                        0.0
-                    ]
-                ],
-                "waypoint_mode": 1
-            },
-            {
-                "name": "agent12",
-                "pos": [
-                    -15.8,
-                    5.21,
-                    0.0
-                ],
-                "type": "adult",
-                "model": "person_single_circle",
-                "waypoints": [
-                    [
-                        -15.8,
-                        5.21,
                         0.0
                     ],
                     [

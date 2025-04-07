@@ -8,7 +8,7 @@
             ],
             "goal": [
                 30,
-                14,
+                7,
                 0.0
             ]
         }
@@ -19,7 +19,7 @@
             {
                 "name": "agent0",
                 "pos": [
-                    15,
+                    5,
                     2,
                     0.0
                 ],
@@ -27,12 +27,12 @@
                 "model": "person_single_circle",
                 "waypoints": [
                     [
-                        15,
+                        5,
                         2,
                         0.0
                     ],
                     [
-                        20,
+                        15,
                         10,
                         0.0
                     ]
@@ -41,75 +41,6 @@
             },
             {
                 "name": "agent1",
-                "pos": [
-                    10,
-                    22,
-                    0.0
-                ],
-                "type": "adult",
-                "model": "person_single_circle",
-                "waypoints": [
-                    [
-                        10,
-                        22,
-                        0.0
-                    ],
-                    [
-                        5,
-                        18,
-                        0.0
-                    ]
-                ],
-                "waypoint_mode": 1
-            },
-            {
-                "name": "agent2",
-                "pos": [
-                    10,
-                    2,
-                    0.0
-                ],
-                "type": "adult",
-                "model": "person_single_circle",
-                "waypoints": [
-                    [
-                        10,
-                        2,
-                        0.0
-                    ],
-                    [
-                        5,
-                        14,
-                        0.0
-                    ]
-                ],
-                "waypoint_mode": 1
-            },
-            {
-                "name": "agent3",
-                "pos": [
-                    15,
-                    10,
-                    0.0
-                ],
-                "type": "adult",
-                "model": "person_single_circle",
-                "waypoints": [
-                    [
-                        15,
-                        10,
-                        0.0
-                    ],
-                    [
-                        15,
-                        14,
-                        0.0
-                    ]
-                ],
-                "waypoint_mode": 1
-            },
-            {
-                "name": "agent4",
                 "pos": [
                     28.5,
                     22,
@@ -124,8 +55,77 @@
                         0.0
                     ],
                     [
+                        15,
+                        2,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "agent2",
+                "pos": [
+                    20,
+                    10,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
                         20,
+                        10,
+                        0.0
+                    ],
+                    [
+                        10,
                         22,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "agent3",
+                "pos": [
+                    5,
+                    18,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        5,
+                        18,
+                        0.0
+                    ],
+                    [
+                        10,
+                        2,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "agent4",
+                "pos": [
+                    5,
+                    14,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        5,
+                        14,
+                        0.0
+                    ],
+                    [
+                        15,
+                        14,
                         0.0
                     ]
                 ],
@@ -134,21 +134,21 @@
             {
                 "name": "agent5",
                 "pos": [
-                    15,
-                    6,
+                    20,
+                    22,
                     0.0
                 ],
                 "type": "adult",
                 "model": "person_single_circle",
                 "waypoints": [
                     [
-                        15,
-                        6,
+                        20,
+                        22,
                         0.0
                     ],
                     [
-                        20,
-                        14,
+                        15,
+                        6,
                         0.0
                     ]
                 ],
@@ -157,21 +157,21 @@
             {
                 "name": "agent6",
                 "pos": [
-                    5,
-                    22,
+                    20,
+                    14,
                     0.0
                 ],
                 "type": "adult",
                 "model": "person_single_circle",
                 "waypoints": [
                     [
-                        5,
-                        22,
+                        20,
+                        14,
                         0.0
                     ],
                     [
                         5,
-                        2,
+                        22,
                         0.0
                     ]
                 ],
