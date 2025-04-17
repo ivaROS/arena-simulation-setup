@@ -12,6 +12,8 @@
   <arg name="namespace" />
   <arg name="frame" />
 
+  <node pkg="mod_rto_scan" type="mod_rto_scan" name="mod_rto_scan" output="log" />
+
   <group ns="move_base_flex">
     <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/dgap_local_planner_params.yaml"
       command="load" subst_value="True" />
