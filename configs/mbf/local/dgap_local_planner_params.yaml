@@ -23,7 +23,7 @@ DynamicGapPlannerROS:
   yaw_goal_tolerance: 6.28
 
   # gap association
-  assoc_thresh: 0.50
+  assoc_thresh: 1.0 # 0.50
 
   # gap manipulation
   epsilon1: 0.20
@@ -31,7 +31,7 @@ DynamicGapPlannerROS:
   radial_extend: true
 
   # trajectory
-  integrate_maxt: 5.0
+  integrate_maxt: 7.5 # 5.0
   integrate_stept: 0.5
   inf_ratio: 1.5
 
