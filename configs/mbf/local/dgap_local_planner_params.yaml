@@ -26,8 +26,7 @@ DynamicGapPlannerROS:
   assoc_thresh: 1.0 # 0.50
 
   # gap manipulation
-  epsilon1: 0.20
-  epsilon2: 0.30
+  rgc_angle: 1.0
   radial_extend: true
 
   # trajectory
