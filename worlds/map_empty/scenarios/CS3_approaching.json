@@ -18,32 +18,32 @@
         {
         "name": "shelf1",
         "model": "long_shelf",
-        "pos": [3.5, 10, 1.5707]
+        "pos": [3.25, 10, 1.5707]
         },
         {
             "name": "shelf2",
             "model": "long_shelf",
-            "pos": [3.5, 14, 1.5707]
+            "pos": [3.25, 14, 1.5707]
         },
         {
             "name": "shelf3",
             "model": "long_shelf",
-            "pos": [9.0, 10, 1.5707]
+            "pos": [8.50, 10, 1.5707]
         },
         {
             "name": "shelf4",
             "model": "long_shelf",
-            "pos": [9.0, 14, 1.5707]
+            "pos": [8.50, 14, 1.5707]
         },
         {
             "name": "shelf5",
             "model": "long_shelf",
-            "pos": [14.5, 10, 1.5707]
+            "pos": [13.75, 10, 1.5707]
         },
         {
             "name": "shelf6",
             "model": "long_shelf",
-            "pos": [14.5, 14, 1.5707]
+            "pos": [13.75, 14, 1.5707]
         }
         ],
       "dynamic": [

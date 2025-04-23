@@ -18,22 +18,22 @@
             {
             "name": "shelf1",
             "model": "long_shelf",
-            "pos": [3.5, 9, 1.5707]
+            "pos": [3.25, 9, 1.5707]
             },
             {
                 "name": "shelf2",
                 "model": "long_shelf",
-                "pos": [3.5, 15, 1.5707]
+                "pos": [3.25, 15, 1.5707]
             },
             {
                 "name": "shelf3",
                 "model": "long_shelf",
-                "pos": [8.75, 9, 1.5707]
+                "pos": [8.5, 9, 1.5707]
             },
             {
                 "name": "shelf4",
                 "model": "long_shelf",
-                "pos": [8.75, 15, 1.5707]
+                "pos": [8.5, 15, 1.5707]
                 }
             ],
         "dynamic": [
