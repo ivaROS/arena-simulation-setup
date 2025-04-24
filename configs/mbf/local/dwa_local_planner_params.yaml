@@ -8,11 +8,12 @@ planner_frequency: 1.0
 
 recovery_behavior_enabled: true
 recovery_behaviors:
-  - name: 'clear_costmap'
-    type: 'clear_costmap_recovery/ClearCostmapRecovery'
   - name: 'rotate_recovery'
     type: 'rotate_recovery/RotateRecovery'
+  - name: 'clear_costmap'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
 
+  
 DwaLocalPlannerROS:
   odom_topic: odom
   sim_time: 1.5
