@@ -9,11 +9,11 @@ planner_frequency: 1.0
 recovery_behavior_enabled: true
 
 recovery_behaviors:
-  - name: 'clear_costmap'
-    type: 'clear_costmap_recovery/ClearCostmapRecovery'
   - name: 'rotate_recovery'
     type: 'rotate_recovery/RotateRecovery'
-
+  - name: 'clear_costmap'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+    
 MpcLocalPlannerROS:
   odom_topic: odom
   grid:
@@ -66,7 +66,7 @@ MpcLocalPlannerROS:
     yaw_goal_tolerance: 6.28
     global_plan_overwrite_orientation: true
     global_plan_prune_distance: 1.0
-    allow_init_with_backward_motion: true
+    allow_init_with_backward_motion: false
     max_global_plan_lookahead_dist: 1.0
     force_reinit_new_goal_dist: 1.0
     force_reinit_new_goal_angular: 1.57

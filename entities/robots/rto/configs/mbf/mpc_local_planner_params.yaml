@@ -17,13 +17,15 @@ MpcLocalPlannerROS:
     unicycle:
       max_vel_x: 1.0
       max_vel_x_backwards: 1.0
-      max_vel_y: 1.0
+      max_vel_y: 0.0
       max_vel_theta: 1.0
       acc_lim_x: 5.0 # deactive bounds with zero
       dec_lim_x: 5.0 # deactive bounds with zero
       acc_lim_y: 5.0
       dec_lim_y: 5.0 # deactive bounds with zero
       acc_lim_theta: 5.0 # deactivate bounds with zero
+
+  min_turning_radius: 0.0 # diff-drive robot (can turn on place!)
 
   ## Footprint model for collision avoidance
   footprint_model:
@@ -32,12 +34,16 @@ MpcLocalPlannerROS:
 
   ## Collision avoidance
   collision_avoidance:
-    min_obstacle_dist: 0.3 # Note, this parameter must be chosen w.r.t. the footprint_model
+    min_obstacle_dist: 0.3 # If I set to 0.25, planner fails # Note, this parameter must be chosen w.r.t. the footprint_model
+    inflation_dist: 0.6
+    include_costmap_obstacles: true
+    costmap_obstacles_behind_robot_dist: 1.5
+    obstacle_poses_affected: 15
+    dynamic_obstacle_inflation_dist: 0.6
     enable_dynamic_obstacles: true
     force_inclusion_dist: 0.5
     cutoff_dist: 5
-    include_costmap_obstacles: true
-    costmap_obstacles_behind_robot_dist: 1.5
+
 
   ## Planning grid
   grid:
@@ -61,8 +67,10 @@ MpcLocalPlannerROS:
       type: none   # can be "none"
   controller:
     outer_ocp_iterations: 5
-    max_global_plan_lookahead_dist: 5.6
-    global_plan_viapoint_sep: 5.5
+    max_global_plan_lookahead_dist: 3.0 #  5.6
+    global_plan_viapoint_sep: -0.1 # 5.5
+    feasibility_check_no_poses: 5
+
   solver:
     type: ipopt
     lsq_lm:
