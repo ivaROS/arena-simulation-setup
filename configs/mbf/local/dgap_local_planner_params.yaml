@@ -7,7 +7,7 @@ controller_patience: 15.0
 planner_frequency: 0.0
 
 DynamicGapPlannerROS:
-  heading: false
+  # heading: false
   holonomic: true   # planning information
   projection_operator: true
   egocircle_prop_cheat: false
@@ -32,7 +32,7 @@ DynamicGapPlannerROS:
   # trajectory
   integrate_maxt: 7.5 # 5.0
   integrate_stept: 0.5
-  inf_ratio: 1.5
+  inf_ratio: 1.1
 
   # control
   k_fb_x: 1.5
