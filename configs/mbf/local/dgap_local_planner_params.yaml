@@ -7,30 +7,31 @@ controller_patience: 15.0
 planner_frequency: 0.0
 
 DynamicGapPlannerROS:
-  # heading: false
-  holonomic: true   # planning information
+  # PlanningMode
+  holonomic: true
   projection_operator: true
   egocircle_prop_cheat: false
   gap_feasibility_check: true
   perfect_gap_models: false
   future_scan_propagation: true
 
-  # manual control
+  # Control
   man_ctrl: false
+  ctrl_ahead_pose: 2
 
-  # goal param
+  # Goal
   xy_goal_tolerance: 0.25
   yaw_goal_tolerance: 6.28
   xy_waypoint_tolerance: 0.1
 
-  # gap association
+  # Gap Association
   assoc_thresh: 1.0 # 0.50
 
-  # gap manipulation
+  # Gap Manipulation
   rgc_angle: 1.0
-  radial_extend: true
+  # radial_extend: true
 
-  # trajectory
+  # Trajectory
   integrate_maxt: 5.0 # 7.5 # 
   integrate_stept: 0.5
   max_pose_to_scan_dist: 0.5
@@ -39,13 +40,7 @@ DynamicGapPlannerROS:
   inf_ratio: 1.1
   Q_f: 1.0
 
-  # control
-  # k_fb_x: 1.5
-  # k_fb_y: 1.5
-  # k_fb_theta: 1.5
-  ctrl_ahead_pose: 2
-
-  # projection params
+  # ProjectionParam
   k_po_x: 1.0
   r_unity: 0.35
   r_zero: 1.0

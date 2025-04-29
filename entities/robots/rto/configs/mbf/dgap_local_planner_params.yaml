@@ -13,19 +13,21 @@ DynamicGapPlannerROS:
   # publish_feedback: false
 
   # Robot
-
+  robot_radius: 0.225 # m
   max_vel_x: 1.0
   max_vel_y: 1.0
   max_vel_theta: 1.0
-  min_turning_radius: 0.0 # diff-drive robot (can turn on place!)
-  max_range: 5.0 # m
-  robot_radius: 0.225 # m
 
-  footprint_model:
-    type: point
+  # min_turning_radius: 0.0 # diff-drive robot (can turn on place!)
+  
+  # Scan
+  max_range: 5.0 # m
+
+  # footprint_model:
+  #   type: point
 
   # Agents
-  agent_radius: 0.30 # m (guess)
+  # agent_radius: 0.30 # m (guess)
 
   # GoalTolerance
 
