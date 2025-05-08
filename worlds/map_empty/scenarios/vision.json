@@ -4,7 +4,7 @@
             "start": [
                 15.0,
                 12.0,
-                2.0
+                0.0
             ],
             "goal": [
                 28.0,
@@ -14,7 +14,18 @@
         }
     ],
     "obstacles": {
-        "static": [],
+        "static": [
+            {
+                "name": "shelf0",
+                "model": "shelf",
+                "pos": [17.5, 9.5, 2.0]
+            },
+            {
+                "name": "shelf1",
+                "model": "shelf",
+                "pos": [11.0, 12.0, 0.0]
+            }
+        ],
         "dynamic": [
             {
                 "name": "agent0",
@@ -73,7 +84,7 @@
                 "model": "person_single_circle",
                 "waypoints": [
                     [
-                        16.0,
+                        14.0,
                         6.0,
                         0.0
                     ],
