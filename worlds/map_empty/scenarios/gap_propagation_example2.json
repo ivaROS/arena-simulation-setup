@@ -61,6 +61,29 @@
                     ]
                 ],
                 "waypoint_mode": 1
+            },
+            {
+                "name": "agent2",
+                "pos": [
+                    21.0,
+                    13.0,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        9.0,
+                        19.0,
+                        0.0
+                    ],
+                    [
+                        21.0,
+                        13.0,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
             }
         ],
         "interactive": []
