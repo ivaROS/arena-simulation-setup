@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <!-- <env name="ROSCONSOLE_CONFIG_FILE" value="$(find dynamic_gap)/config/custom_rosconsole.conf"/> -->
+
+  <node name="mbf_cmd_vel_relay" pkg="topic_tools" type="relay" args="cmd_vel_internal cmd_vel" />
+
+  <!-- Arguments -->
+  <arg name="model" />
+  <arg name="speed" />
+
+  <arg name="namespace" />
+  <arg name="frame" />
+
+  <node pkg="mod_rto_scan" type="mod_rto_scan" name="mod_rto_scan" output="log" />
+
+  <group ns="move_base_flex">
+    <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/qgap_local_planner_params.yaml"
+      command="load" subst_value="True" />
+    <rosparam
+      file="$(find arena_simulation_setup)/entities/robots/$(arg model)/configs/mbf/qgap_local_planner_params.yaml"
+      command="load" subst_value="True" />
+
+    <param name="base_local_planner" value="QuadGapPlannerROS" />
+  </group>
+
+  <!-- temp -->
+  <group ns="move_base_legacy_relay">
+    <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/qgap_local_planner_params.yaml"
+      command="load" subst_value="True" />
+    <rosparam
+      file="$(find arena_simulation_setup)/entities/robots/$(arg model)/configs/mbf/qgap_local_planner_params.yaml"
+      command="load" subst_value="True" />
+    <param name="base_local_planner" value="QuadGapPlannerROS" />
+  </group>
+
+  <!-- <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" output="screen"/> -->
+
+</launch>
