@@ -7,5 +7,73 @@ controller_patience: 15.0
 planner_frequency: 0.0
 
 QuadGapPlannerROS:
-  # Nothing
-  holonomic: True
+    min_resoln: 1
+    gap_diff: 0.1
+    global_plan_lookup_increment: 30
+    lin_goal_tolerance: 0.5
+    # waypoint_tolerance: 
+    global_plan_change_tolerance: 0.1
+    follow_the_gap_vis: False
+    close_gap_vis: False
+    debug_viz: True
+    radial_convert: True
+
+    epsilon2: 0.20 # 0.18 0.09
+    epsilon1: 0.20 # 0.18 0.09
+    r_inscr:  0.20
+
+    sigma: 0.3
+
+    niGen_s: True
+    config_sanity_val: 100
+    ctrl_ahead_pose: 2
+
+    reduction_threshold: 3.1415926
+    reduction_target: 1.5707
+
+    viz_jitter: 0.01
+
+    num_feasi_check: 30
+
+    v_lin_x_const: 0.0
+    v_lin_y_const: 0.0
+    v_ang_const: 0.0
+    k_drive_x: 2
+    k_drive_y: 2
+    k_turn: 0.8
+    k_po: 1
+    k_po_turn: 3
+
+    vx_absmax: 0.5
+    vy_absmax: 0.5
+    ang_absmax: 0.5
+
+    inf_ratio: 1.2
+    terminal_weight: 10
+    waypoint_ratio: 1.5
+
+
+    r_min: 0.36
+    r_norm: 0.75
+    r_norm_offset: 0
+
+    max_idx_diff: 256
+    radial_extend: True
+
+    feasi_inflated: True
+    projection_inflated: True
+    far_feasible: True
+
+    fig_gen: False
+
+    holonomic: True
+    full_fov: False
+    projection_operator: True
+
+    synthesized_frame: True
+    scale: 1
+    integrate_maxt: 10
+    integrate_stept: 0.5
+    rmax: 0.5
+
+    line: False
