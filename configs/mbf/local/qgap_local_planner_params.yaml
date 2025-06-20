@@ -7,73 +7,118 @@ controller_patience: 15.0
 planner_frequency: 0.0
 
 QuadGapPlannerROS:
-    min_resoln: 1
-    gap_diff: 0.1
-    global_plan_lookup_increment: 30
-    lin_goal_tolerance: 0.5
-    # waypoint_tolerance: 
-    global_plan_change_tolerance: 0.1
-    follow_the_gap_vis: False
-    close_gap_vis: False
-    debug_viz: True
-    radial_convert: True
+  ########
+  # Goal #
+  ########
+  xy_global_goal_tolerance: 0.25
+  yaw_global_goal_tolerance: 6.28
+  xy_waypoint_tolerance: 0.1
 
-    epsilon2: 0.20 # 0.18 0.09
-    epsilon1: 0.20 # 0.18 0.09
-    r_inscr:  0.20
+  ################
+  # PlanningMode #
+  ################
+  holonomic: True
+  projection_operator: True
+  num_feasi_check: 30
+  halt_size: 5
+  robot_path_orient_linear_decay: True
+  virtual_path_decay_enable: True
+  decay_factor: 0.0
+  use_bezier: True
 
-    sigma: 0.3
+  #################
+  # ControlParams #
+  #################
+  k_drive_x: 2
+  k_drive_y: 2
+  k_turn: 0.8
+  v_ang_const: 0.0
+  v_lin_x_const: 0.0
+  v_lin_y_const: 0.0
+  ctrl_ahead_pose: 2
+  vx_absmax: 0.5
+  vy_absmax: 0.5
+  ang_absmax: 0.5
+  speed_factor: 2.0
 
-    niGen_s: True
-    config_sanity_val: 100
-    ctrl_ahead_pose: 2
+  #################
+  # ManualControl #
+  #################
+  man_ctrl: False
+  man_x: 0.0
+  man_y: 0.0
+  man_theta: 0.0
+  line: False
 
-    reduction_threshold: 3.1415926
-    reduction_target: 1.5707
+  ###################
+  # GapManipulation #
+  ###################
+  sigma: 0.3
+  reduction_threshold: 3.1415926
+  reduction_target: 1.5707
+  max_idx_diff: 256
+  radial_extend: True
+  radial_convert: True
+  rot_ratio: 1.5
 
-    viz_jitter: 0.01
+  ###################
+  # ProjectionParam #
+  ###################
+  k_po: 1
+  r_min: 0.36
+  r_norm: 0.75
+  r_norm_offset: 0
+  k_po_turn: 3
 
-    num_feasi_check: 30
+  ##############
+  # Trajectory #
+  ##############
+  integrate_maxt: 10
+  integrate_stept: 0.5
+  rmax: 0.5
+  cobs: -1
+  w: 3
+  inf_ratio: 1.2
+  terminal_weight: 10
+  robot_geo_scale: 1
+  bezier_interp: True
+  bezier_unit_time: 0.1
 
-    v_lin_x_const: 0.0
-    v_lin_y_const: 0.0
-    v_ang_const: 0.0
-    k_drive_x: 2
-    k_drive_y: 2
-    k_turn: 0.8
-    k_po: 1
-    k_po_turn: 3
+  ####################
+  # CollisionChecker #
+  ####################
+  collision_checker_enable: True
+  cc_type: 1
 
-    vx_absmax: 0.5
-    vy_absmax: 0.5
-    ang_absmax: 0.5
+  # min_resoln: 1
+  # gap_diff: 0.1
+  # global_plan_lookup_increment: 30
 
-    inf_ratio: 1.2
-    terminal_weight: 10
-    waypoint_ratio: 1.5
+  # global_plan_change_tolerance: 0.1
+  # follow_the_gap_vis: False
+  # close_gap_vis: False
+  # debug_viz: True
+
+  # epsilon2: 0.20 # 0.18 0.09
+  # epsilon1: 0.20 # 0.18 0.09
+  # r_inscr:  0.20
 
 
-    r_min: 0.36
-    r_norm: 0.75
-    r_norm_offset: 0
+  # niGen_s: True
+  # config_sanity_val: 100
 
-    max_idx_diff: 256
-    radial_extend: True
+  # viz_jitter: 0.01
 
-    feasi_inflated: True
-    projection_inflated: True
-    far_feasible: True
+  # waypoint_ratio: 1.5
 
-    fig_gen: False
+  # feasi_inflated: True
+  # projection_inflated: True
+  # far_feasible: True
 
-    holonomic: True
-    full_fov: False
-    projection_operator: True
+  # fig_gen: False
 
-    synthesized_frame: True
-    scale: 1
-    integrate_maxt: 10
-    integrate_stept: 0.5
-    rmax: 0.5
+  # full_fov: False
 
-    line: False
+  # synthesized_frame: True
+  # scale: 1
+
