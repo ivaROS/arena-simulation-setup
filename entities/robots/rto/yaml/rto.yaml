@@ -3,10 +3,19 @@ bodies: # List of named bodies
     pose: [0, 0, 0]
     type: dynamic
     color: [0.2, 0.8, 0.2, 1.0]
+    # footprints:
+    #   - type: circle
+    #     radius: 0.225
+    #     center: [0.0, 0.0]
+    #     layers: ["all"]
+    #     collision: true
+    #     density: 1
+    #     friction: 0.1
+    #     restitution: 0
+    #     sensor: false
     footprints:
-      - type: circle
-        radius: 0.225
-        center: [0.0, 0.0]
+      - type: polygon
+        points: [[-0.30, -0.15], [-0.30, 0.15], [0.30, 0.15], [0.30, -0.15]]
         layers: ["all"]
         collision: true
         density: 1

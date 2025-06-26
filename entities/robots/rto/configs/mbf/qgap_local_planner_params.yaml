@@ -7,5 +7,5 @@ QuadGapPlannerROS:
   width: 0.3
   avg_lin_speed: 0.2
   avg_rot_speed: 0.5
-  shape_id: 1
+  shape_id: 0
   use_geo_storage: false
