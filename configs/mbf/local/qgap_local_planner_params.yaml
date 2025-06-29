@@ -20,8 +20,6 @@ QuadGapPlannerROS:
   holonomic: True
   heading: True
   projection_operator: True
-  num_feasi_check: 30
-  halt_size: 5
   robot_path_orient_linear_decay: True
   virtual_path_decay_enable: True
   decay_factor: 0.0
@@ -30,17 +28,10 @@ QuadGapPlannerROS:
   #################
   # ControlParams #
   #################
-  k_drive_x: 2
-  k_drive_y: 2
-  k_turn: 0.8
-  v_ang_const: 0.0
-  v_lin_x_const: 0.0
-  v_lin_y_const: 0.0
+  Kpx: 2
+  Kpy: 2
+  Kpz: 0.8
   ctrl_ahead_pose: 2
-  vx_absmax: 1.0 # 0.5
-  vy_absmax: 1.0 # 0.5
-  vang_absmax: 1.0 # 0.5
-  speed_factor: 2.0
 
   #################
   # ManualControl #
@@ -54,13 +45,11 @@ QuadGapPlannerROS:
   ###################
   # GapManipulation #
   ###################
-  sigma: 0.3
+  rot_ratio: 1.5
   reduction_threshold: 3.1415926
   reduction_target: 1.5707
-  max_idx_diff: 256
   radial_extend: True
   radial_convert: True
-  rot_ratio: 1.5
 
   ###################
   # ProjectionParam #
@@ -75,9 +64,10 @@ QuadGapPlannerROS:
   integrate_maxt: 10
   integrate_stept: 0.5
   rmax: 0.5
-  Q: -1
-  pen_exp_weight: 3
+  sigma: 0.3
   inf_ratio: 1.2
+  Q: 1
+  pen_exp_weight: 3
   Q_f: 10
   robot_geo_scale: 1
   bezier_interp: True
