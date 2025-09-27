@@ -1,0 +1,262 @@
+{
+  "robots": [
+    {
+      "start": [1.5, 2, 0.0],
+      "goal": [30, 16, 0.0]
+    }
+  ],
+  "obstacles": {
+    "static": [],
+    "dynamic": [
+      {
+        "name": "agent0",
+        "pos": [5, 2, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[5, 2, 0.0], [15, 10, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent1",
+        "pos": [28.5, 22, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[28.5, 22, 0.0], [15, 2, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent2",
+        "pos": [20, 10, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[20, 10, 0.0], [10, 22, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent3",
+        "pos": [10, 2, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[10, 2, 0.0], [25, 2, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent4",
+        "pos": [5, 14, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[5, 14, 0.0], [15, 14, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent5",
+        "pos": [20, 22, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[20, 22, 0.0], [15, 6, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent6",
+        "pos": [15, 6, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[15, 6, 0.0], [10, 10, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent7",
+        "pos": [28.5, 6, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[28.5, 6, 0.0], [28.5, 2, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent8",
+        "pos": [5, 22, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[5, 22, 0.0], [15, 14, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent9",
+        "pos": [20, 2, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[20, 2, 0.0], [28.5, 22, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent10",
+        "pos": [5, 10, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[5, 10, 0.0], [20, 2, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent11",
+        "pos": [28.5, 10, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[28.5, 10, 0.0], [28.5, 6, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent12",
+        "pos": [10, 18, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[10, 18, 0.0], [10, 22, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent13",
+        "pos": [25, 18, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[25, 18, 0.0], [28.5, 18, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent14",
+        "pos": [20, 6, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[20, 6, 0.0], [25, 2, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent15",
+        "pos": [2, 6, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[2, 6, 0.0], [8, 18, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent16",
+        "pos": [12, 20, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[12, 20, 0.0], [22, 8, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent17",
+        "pos": [18, 4, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[18, 4, 0.0], [6, 12, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent18",
+        "pos": [26, 4, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[26, 4, 0.0], [26, 18, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent19",
+        "pos": [8, 8, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[8, 8, 0.0], [22, 16, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent20",
+        "pos": [30, 12, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[30, 12, 0.0], [2, 12, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent21",
+        "pos": [2, 20, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[2, 20, 0.0], [10, 12, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent22",
+        "pos": [30, 4, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[30, 4, 0.0], [18, 14, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent23",
+        "pos": [8, 16, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[8, 16, 0.0], [20, 4, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent24",
+        "pos": [25, 20, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[25, 20, 0.0], [15, 12, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent25",
+        "pos": [6, 4, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[6, 4, 0.0], [14, 18, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent26",
+        "pos": [28, 8, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[28, 8, 0.0], [12, 22, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent27",
+        "pos": [16, 2, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[16, 2, 0.0], [16, 18, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent28",
+        "pos": [22, 16, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[22, 16, 0.0], [8, 6, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent29",
+        "pos": [4, 12, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[4, 12, 0.0], [28, 12, 0.0]],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent30",
+        "pos": [30, 18, 0.0],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [[30, 18, 0.0], [12, 2, 0.0]],
+        "waypoint_mode": 1
+      }
+    ],
+    "interactive": []
+  }
+}
