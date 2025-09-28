@@ -8,7 +8,6 @@
   "obstacles": {
     "static": [],
     "dynamic": [
-      /* === From File A === */
       {"name":"agent0","pos":[25,14,0.0],"type":"adult","model":"person_single_circle","waypoints":[[25,14,0.0],[28.5,22,0.0]],"waypoint_mode":1},
       {"name":"agent1","pos":[20,2,0.0],"type":"adult","model":"person_single_circle","waypoints":[[20,2,0.0],[28.5,18,0.0]],"waypoint_mode":1},
       {"name":"agent2","pos":[28.5,2,0.0],"type":"adult","model":"person_single_circle","waypoints":[[28.5,2,0.0],[20,22,0.0]],"waypoint_mode":1},
@@ -25,7 +24,6 @@
       {"name":"agent13","pos":[5,14,0.0],"type":"adult","model":"person_single_circle","waypoints":[[5,14,0.0],[10,18,0.0]],"waypoint_mode":1},
       {"name":"agent14","pos":[28.5,6,0.0],"type":"adult","model":"person_single_circle","waypoints":[[28.5,6,0.0],[15,2,0.0]],"waypoint_mode":1},
 
-      /* === From File B (non-duplicates) === */
       {"name":"agent15","pos":[28.5,18,0.0],"type":"adult","model":"person_single_circle","waypoints":[[28.5,18,0.0],[28.5,14,0.0]],"waypoint_mode":1},
       {"name":"agent16","pos":[5,22,0.0],"type":"adult","model":"person_single_circle","waypoints":[[5,22,0.0],[10,2,0.0]],"waypoint_mode":1},
       {"name":"agent17","pos":[25,18,0.0],"type":"adult","model":"person_single_circle","waypoints":[[25,18,0.0],[5,18,0.0]],"waypoint_mode":1},
@@ -34,7 +32,6 @@
       {"name":"agent20","pos":[28.5,2,0.0],"type":"adult","model":"person_single_circle","waypoints":[[28.5,2,0.0],[10,10,0.0]],"waypoint_mode":1},
       {"name":"agent21","pos":[20,22,0.0],"type":"adult","model":"person_single_circle","waypoints":[[20,22,0.0],[15,10,0.0]],"waypoint_mode":1},
 
-      /* === New Agents to Reach 50 === */
       {"name":"agent22","pos":[2,8,0.0],"type":"adult","model":"person_single_circle","waypoints":[[2,8,0.0],[12,18,0.0]],"waypoint_mode":1},
       {"name":"agent23","pos":[18,20,0.0],"type":"adult","model":"person_single_circle","waypoints":[[18,20,0.0],[28,8,0.0]],"waypoint_mode":1},
       {"name":"agent24","pos":[30,6,0.0],"type":"adult","model":"person_single_circle","waypoints":[[30,6,0.0],[12,14,0.0]],"waypoint_mode":1},
