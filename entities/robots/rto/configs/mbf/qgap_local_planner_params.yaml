@@ -11,5 +11,5 @@ QuadGapPlannerROS:
   vy_absmax: 1.0 # 0.5
   vang_absmax: 1.0 # 0.5  
   speed_factor: 2.0
-  shape_id: 0  # 0: circle, 1: box
+  shape_id: 1  # 0: circle, 1: box
   use_geo_storage: false

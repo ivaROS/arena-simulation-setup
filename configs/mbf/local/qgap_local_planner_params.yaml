@@ -2,7 +2,7 @@ controllers:
   - name: QuadGapPlannerROS
     type: quad_gap/QuadGapPlannerROS
 
-controller_frequency: 5.0
+controller_frequency: 1.0
 controller_patience: 15.0
 planner_frequency: 0.0
 
