@@ -27,10 +27,10 @@ actions:
       linear: 0.0
       angular: 0.0
   continuous:
-    linear_range: [-1.0, 1.0]
+    linear_range: [-2.0, 2.0]
       # x: [-1.0, 1.0] # Maximum translational velocity in m/s
       # y: [-1.0, 1.0]
-    angular_range: [-1.0, 1.0] # Maximum rotational velocity in rad/s
+    angular_range: [-3.0, 3.0] # Maximum rotational velocity in rad/s
 laser:
   angle:
     min: -3.14159265359

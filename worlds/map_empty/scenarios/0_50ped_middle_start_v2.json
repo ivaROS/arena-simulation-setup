@@ -1,0 +1,69 @@
+
+{
+  "robots": [
+    {
+      "start": [15.0, 12.0, 0.0],
+      "goal": [28.0, 5.0, 0.0]
+    }
+  ],
+  "obstacles": {
+    "static": [],
+    "dynamic": [
+      {"name":"agent0","pos":[4.0,6.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[4.0,6.0,0.0],[9.0,19.0,0.0]],"waypoint_mode":1},
+      {"name":"agent1","pos":[26.0,18.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[26.0,18.0,0.0],[21.0,7.0,0.0]],"waypoint_mode":1},
+      {"name":"agent2","pos":[8.0,20.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[8.0,20.0,0.0],[15.0,16.0,0.0]],"waypoint_mode":1},
+      {"name":"agent3","pos":[22.0,4.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[22.0,4.0,0.0],[27.0,11.0,0.0]],"waypoint_mode":1},
+      {"name":"agent4","pos":[6.0,14.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[6.0,14.0,0.0],[3.0,9.0,0.0]],"waypoint_mode":1},
+      {"name":"agent5","pos":[24.0,10.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[24.0,10.0,0.0],[18.0,20.0,0.0]],"waypoint_mode":1},
+      {"name":"agent6","pos":[11.0,5.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[11.0,5.0,0.0],[5.0,16.0,0.0]],"waypoint_mode":1},
+      {"name":"agent7","pos":[18.0,21.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[18.0,21.0,0.0],[24.0,15.0,0.0]],"waypoint_mode":1},
+      {"name":"agent8","pos":[29.0,8.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[29.0,8.0,0.0],[20.0,3.0,0.0]],"waypoint_mode":1},
+      {"name":"agent9","pos":[3.0,18.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[3.0,18.0,0.0],[10.0,10.0,0.0]],"waypoint_mode":1},
+
+      {"name":"agent10","pos":[13.0,11.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[13.0,11.0,0.0],[19.0,14.0,0.0]],"waypoint_mode":1},
+      {"name":"agent11","pos":[17.0,13.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[17.0,13.0,0.0],[11.0,17.0,0.0]],"waypoint_mode":1},
+      {"name":"agent12","pos":[14.0,16.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[14.0,16.0,0.0],[22.0,12.0,0.0]],"waypoint_mode":1},
+      {"name":"agent13","pos":[19.0,9.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[19.0,9.0,0.0],[12.0,6.0,0.0]],"waypoint_mode":1},
+      {"name":"agent14","pos":[10.0,13.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[10.0,13.0,0.0],[16.0,8.0,0.0]],"waypoint_mode":1},
+      {"name":"agent15","pos":[20.0,15.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[20.0,15.0,0.0],[14.0,10.0,0.0]],"waypoint_mode":1},
+      {"name":"agent16","pos":[12.0,8.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[12.0,8.0,0.0],[18.0,6.0,0.0]],"waypoint_mode":1},
+      {"name":"agent17","pos":[18.0,17.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[18.0,17.0,0.0],[9.0,12.0,0.0]],"waypoint_mode":1},
+      {"name":"agent18","pos":[15.5,7.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[15.5,7.0,0.0],[21.0,18.0,0.0]],"waypoint_mode":1},
+      {"name":"agent19","pos":[16.0,18.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[16.0,18.0,0.0],[8.0,7.0,0.0]],"waypoint_mode":1},
+
+      {"name":"agent20","pos":[5.0,3.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[5.0,3.0,0.0],[13.0,9.0,0.0]],"waypoint_mode":1},
+      {"name":"agent21","pos":[27.0,21.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[27.0,21.0,0.0],[23.0,13.0,0.0]],"waypoint_mode":1},
+      {"name":"agent22","pos":[7.0,22.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[7.0,22.0,0.0],[4.0,15.0,0.0]],"waypoint_mode":1},
+      {"name":"agent23","pos":[28.0,4.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[28.0,4.0,0.0],[25.0,10.0,0.0]],"waypoint_mode":1},
+      {"name":"agent24","pos":[2.0,11.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[2.0,11.0,0.0],[8.0,5.0,0.0]],"waypoint_mode":1},
+      {"name":"agent25","pos":[30.0,14.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[30.0,14.0,0.0],[24.0,21.0,0.0]],"waypoint_mode":1},
+      {"name":"agent26","pos":[9.0,4.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[9.0,4.0,0.0],[3.0,12.0,0.0]],"waypoint_mode":1},
+      {"name":"agent27","pos":[21.0,20.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[21.0,20.0,0.0],[28.0,16.0,0.0]],"waypoint_mode":1},
+      {"name":"agent28","pos":[30.0,6.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[30.0,6.0,0.0],[17.0,4.0,0.0]],"waypoint_mode":1},
+      {"name":"agent29","pos":[4.0,20.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[4.0,20.0,0.0],[11.0,21.0,0.0]],"waypoint_mode":1},
+
+      {"name":"agent30","pos":[14.0,12.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[14.0,12.0,0.0],[9.0,18.0,0.0]],"waypoint_mode":1},
+      {"name":"agent31","pos":[16.0,11.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[16.0,11.0,0.0],[22.0,8.0,0.0]],"waypoint_mode":1},
+      {"name":"agent32","pos":[13.0,15.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[13.0,15.0,0.0],[7.0,11.0,0.0]],"waypoint_mode":1},
+      {"name":"agent33","pos":[19.0,12.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[19.0,12.0,0.0],[24.0,6.0,0.0]],"waypoint_mode":1},
+      {"name":"agent34","pos":[15.0,14.5,0.0],"type":"adult","model":"person_single_circle","waypoints":[[15.0,14.5,0.0],[20.0,10.0,0.0]],"waypoint_mode":1},
+      {"name":"agent35","pos":[17.5,9.5,0.0],"type":"adult","model":"person_single_circle","waypoints":[[17.5,9.5,0.0],[12.0,14.0,0.0]],"waypoint_mode":1},
+      {"name":"agent36","pos":[11.5,10.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[11.5,10.0,0.0],[16.5,16.5,0.0]],"waypoint_mode":1},
+      {"name":"agent37","pos":[18.5,15.5,0.0],"type":"adult","model":"person_single_circle","waypoints":[[18.5,15.5,0.0],[13.5,7.5,0.0]],"waypoint_mode":1},
+      {"name":"agent38","pos":[12.5,17.5,0.0],"type":"adult","model":"person_single_circle","waypoints":[[12.5,17.5,0.0],[18.5,13.0,0.0]],"waypoint_mode":1},
+      {"name":"agent39","pos":[20.5,10.5,0.0],"type":"adult","model":"person_single_circle","waypoints":[[20.5,10.5,0.0],[14.5,5.5,0.0]],"waypoint_mode":1},
+
+      {"name":"agent40","pos":[6.0,9.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[6.0,9.0,0.0],[2.0,18.0,0.0]],"waypoint_mode":1},
+      {"name":"agent41","pos":[25.0,16.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[25.0,16.0,0.0],[29.0,7.0,0.0]],"waypoint_mode":1},
+      {"name":"agent42","pos":[8.0,12.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[8.0,12.0,0.0],[6.0,22.0,0.0]],"waypoint_mode":1},
+      {"name":"agent43","pos":[23.0,8.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[23.0,8.0,0.0],[30.0,3.0,0.0]],"waypoint_mode":1},
+      {"name":"agent44","pos":[10.0,18.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[10.0,18.0,0.0],[5.0,20.0,0.0]],"waypoint_mode":1},
+      {"name":"agent45","pos":[22.0,13.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[22.0,13.0,0.0],[26.0,19.0,0.0]],"waypoint_mode":1},
+      {"name":"agent46","pos":[9.0,7.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[9.0,7.0,0.0],[4.0,3.0,0.0]],"waypoint_mode":1},
+      {"name":"agent47","pos":[20.0,19.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[20.0,19.0,0.0],[27.0,22.0,0.0]],"waypoint_mode":1},
+      {"name":"agent48","pos":[27.0,12.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[27.0,12.0,0.0],[19.0,9.0,0.0]],"waypoint_mode":1},
+      {"name":"agent49","pos":[5.0,15.0,0.0],"type":"adult","model":"person_single_circle","waypoints":[[5.0,15.0,0.0],[10.0,4.0,0.0]],"waypoint_mode":1}
+    ],
+    "interactive": []
+  }
+}
