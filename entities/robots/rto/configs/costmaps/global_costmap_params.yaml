@@ -1,2 +1,5 @@
-global_frame: map
-static_map: true
+obstacle_layer:
+  enabled: false
+
+semantic_layer:
+  observation_sources: ""
