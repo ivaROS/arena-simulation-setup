@@ -1,0 +1,26 @@
+{
+  "robots": [
+    {
+      "start": [10.0, 10.0, 0.7],
+      "goal": [10.0, 15.0, 0.0]
+    }
+  ],
+  "obstacles": {
+    "static": [],
+
+    "dynamic": [
+      {
+        "name": "1",
+        "pos": [10.0, 13.0, 0.0],
+        "type": "adult",
+        "model": "actor1",
+        "waypoints": [
+          [10.0, 13.0, 0.0],
+          [10.0, 10.0, 0.7]
+        ],
+        "waypoint_mode": 1
+      }
+    ],
+    "interactive": []
+  }
+}

@@ -38,7 +38,7 @@ DynamicGapPlannerROS:
   Q: 1.0
   pen_exp_weight: 5.0
   inf_ratio: 1.0
-  Q_f: 1.0
+  Q_f: 1.0 # for fmm: 4.0
 
   # ProjectionParam
   k_po_x: 1.0

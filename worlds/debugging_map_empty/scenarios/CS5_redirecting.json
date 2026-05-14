@@ -1,0 +1,89 @@
+{
+    "robots": [
+        {
+            "start": [
+                1.5,
+                12,
+                0.0
+            ],
+            "goal": [
+                28.5,
+                12,
+                0.0
+            ]
+        }
+    ],
+    "obstacles": {
+        "static": [
+            {
+            "name": "shelf1",
+            "model": "long_shelf",
+            "pos": [3.25, 8, 1.5707]
+            },
+            {
+                "name": "shelf2",
+                "model": "long_shelf",
+                "pos": [3.25, 16, 1.5707]
+            },
+            {
+                "name": "shelf3",
+                "model": "long_shelf",
+                "pos": [8.5, 8, 1.5707]
+            },
+            {
+                "name": "shelf4",
+                "model": "long_shelf",
+                "pos": [8.5, 16, 1.5707]
+                }
+            ],
+        "dynamic": [
+            {
+                "name": "agent0",
+                "pos": [
+                    6.5,
+                    9,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        6.5,
+                        12,
+                        0.0
+                    ],
+                    [
+                        6.5,
+                        9,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "agent1",
+                "pos": [
+                    6.5,
+                    11,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        6.5,
+                        14,
+                        0.0
+                    ],
+                    [
+                        6.5,
+                        14,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            }
+        ],
+        "interactive": []
+    }
+}

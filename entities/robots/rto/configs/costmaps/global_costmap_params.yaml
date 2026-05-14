@@ -1,0 +1,5 @@
+obstacle_layer:
+  enabled: false
+
+semantic_layer:
+  observation_sources: ""
