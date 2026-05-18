@@ -22,6 +22,27 @@
   <param name="treat_unknown_as_obstacle" value="true"/>
  </node>
 
+   <!-- GRU pedestrian-density prediction node for Dynamic Gap scoring -->
+  <node pkg="dynamic_gap"
+        type="gru_gap_feature_node.py"
+        name="gru_gap_feature_node"
+        output="screen">
+
+    <param name="model_path"
+           value="/home/azaro/arena_ws/src/planners/dynamic_gap/ml_gap_velocity/models/2.0idle_USED_GRU_WITH_DATA_holo_0_50ped_middle_start_v1-10_30episodes_density_l1_sl5_h64_l2_bs64_lr0p001_e1000__data_dgap_26-05-17_13-50-37_gap_sector_density_gru.pt"/>
+
+    <param name="stats_path"
+           value="/home/azaro/arena_ws/src/planners/dynamic_gap/ml_gap_velocity/models/2.0idle_USED_GRU_WITH_DATA_holo_0_50ped_middle_start_v1-10_30episodes_density_l1_sl5_h64_l2_bs64_lr0p001_e1000__data_dgap_26-05-17_13-50-37_norm_stats.json"/>
+
+    <param name="seq_len" value="5"/>
+    <param name="device" value="cpu"/>
+
+    <param name="observation_topic" value="/rto/gap_feature_observation"/>
+    <param name="prediction_topic" value="/rto/gru_gap_feature_prediction"/>
+    <param name="marker_topic" value="/rto/gru_gap_feature_prediction_markers"/>
+
+  </node>
+
   <group ns="move_base_flex">
     <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/dgap_local_planner_params.yaml"
       command="load" subst_value="True" />
