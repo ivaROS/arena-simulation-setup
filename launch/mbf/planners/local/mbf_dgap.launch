@@ -14,16 +14,16 @@
 
   <node pkg="mod_rto_scan" type="mod_rto_scan" name="mod_rto_scan" output="log" />
 
-  <node pkg="dynamic_gap"
+  <!-- <node pkg="dynamic_gap"
         type="fmm_distance_node.py"
         name="fmm_distance_node"
         output="screen">
   <param name="occ_threshold" value="50"/>
   <param name="treat_unknown_as_obstacle" value="true"/>
- </node>
+ </node> -->
 
    <!-- GRU pedestrian-density prediction node for Dynamic Gap scoring -->
-  <node pkg="dynamic_gap"
+  <!-- <node pkg="dynamic_gap"
         type="gru_gap_feature_node.py"
         name="gru_gap_feature_node"
         output="screen">
@@ -41,7 +41,7 @@
     <param name="prediction_topic" value="/rto/gru_gap_feature_prediction"/>
     <param name="marker_topic" value="/rto/gru_gap_feature_prediction_markers"/>
 
-  </node>
+  </node> -->
 
   <group ns="move_base_flex">
     <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/dgap_local_planner_params.yaml"
