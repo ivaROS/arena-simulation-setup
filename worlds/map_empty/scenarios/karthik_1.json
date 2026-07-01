@@ -1,0 +1,31 @@
+{
+  "robots": [
+    {
+      "start": [15, 15, 0.0],
+      "goal": [30, 2, 0.0]
+    }
+  ],
+  "obstacles": {
+    "static": [],
+    "dynamic": [
+      {"name": "huddle_g1_a0", "pos": [5.0, 6.0, 4.71], "type": "robot", "model": "person_single_circle", "waypoints": [[5.0, 6.0, 4.71]], "waypoint_mode": 1},
+      {"name": "huddle_g1_a1", "pos": [5.87, 5.5, 3.67], "type": "robot", "model": "person_single_circle", "waypoints": [[5.87, 5.5, 3.67]], "waypoint_mode": 1},
+      {"name": "huddle_g1_a2", "pos": [5.87, 4.5, 2.62], "type": "robot", "model": "person_single_circle", "waypoints": [[5.87, 4.5, 2.62]], "waypoint_mode": 1},
+      {"name": "huddle_g1_a3", "pos": [5.0, 4.0, 1.57], "type": "robot", "model": "person_single_circle", "waypoints": [[5.0, 4.0, 1.57]], "waypoint_mode": 1},
+      {"name": "huddle_g1_a4", "pos": [4.13, 4.5, 0.52], "type": "robot", "model": "person_single_circle", "waypoints": [[4.13, 4.5, 0.52]], "waypoint_mode": 1},
+      {"name": "huddle_g1_a5", "pos": [4.13, 5.5, 5.76], "type": "robot", "model": "person_single_circle", "waypoints": [[4.13, 5.5, 5.76]], "waypoint_mode": 1},
+
+      {"name": "roamer0", "pos": [25.0, 14.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[25.0, 14.0, 0.0], [5.0, 14.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer1", "pos": [20.0, 2.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[20.0, 2.0, 0.0], [20.0, 22.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer2", "pos": [28.5, 2.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[28.5, 2.0, 0.0], [5.0, 22.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer3", "pos": [5.0, 6.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[5.0, 6.0, 0.0], [25.0, 6.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer4", "pos": [15.0, 18.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[15.0, 18.0, 0.0], [15.0, 2.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer5", "pos": [10.0, 14.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[10.0, 14.0, 0.0], [28.0, 14.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer6", "pos": [10.0, 10.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[10.0, 10.0, 0.0], [25.0, 22.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer7", "pos": [20.0, 18.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[20.0, 18.0, 0.0], [5.0, 2.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer8", "pos": [25.0, 6.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[25.0, 6.0, 0.0], [5.0, 18.0, 0.0]], "waypoint_mode": 1},
+      {"name": "roamer9", "pos": [20.0, 10.0, 0.0], "type": "adult", "model": "person_single_circle", "waypoints": [[20.0, 10.0, 0.0], [5.0, 10.0, 0.0]], "waypoint_mode": 1}
+    ],
+    "interactive": []
+  }
+}
