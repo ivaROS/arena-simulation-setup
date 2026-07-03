@@ -1,0 +1,367 @@
+{
+    "robots": [
+        {
+            "start": [
+                -15.5,
+                -7.8,
+                0.0
+            ],
+            "goal": [
+                16.3,
+                11.1,
+                0.0
+            ]
+        }
+    ],
+    "obstacles": {
+        "static": [],
+        "dynamic": [
+            {
+                "name": "0",
+                "pos": [
+                    -10.5,
+                    -7.8,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        -15.5,
+                        11.74,
+                        0.0
+                    ],
+                    [
+                        -10.5,
+                        -7.8,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "1",
+                "pos": [
+                    -4.5,
+                    10.9,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        -10.5,
+                        -7.7,
+                        0.0
+                    ],
+                    [
+                        -4.5,
+                        10.9,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "2",
+                "pos": [
+                    -4.5,
+                    -7.7,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        -3.7,
+                        11.1,
+                        0.0
+                    ],
+                    [
+                        -4.5,
+                        -7.7,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "3",
+                "pos": [
+                    4.5,
+                    -7.8,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        -13.7,
+                        10.8,
+                        0.0
+                    ],
+                    [
+                        4.5,
+                        -7.8,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "4",
+                "pos": [
+                    16.3,
+                    -8.1,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        7.5,
+                        11.0,
+                        0.0
+                    ],
+                    [
+                        16.3,
+                        -8.1,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "5",
+                "pos": [
+                    7.5,
+                    11.0,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        16.3,
+                        -8.1,
+                        0.0
+                    ],
+                    [
+                        7.5,
+                        11.0,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "6",
+                "pos": [
+                    0,
+                    10.7,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        4.5,
+                        -8.1,
+                        0.0
+                    ],
+                    [
+                        0,
+                        10.7,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "7",
+                "pos": [
+                    3.5,
+                    0.0,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        4.5,
+                        -8.1,
+                        0.0
+                    ],
+                    [
+                        0,
+                        10.7,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "8",
+                "pos": [
+                    -7.5,
+                    7.8,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        -15.7,
+                        -8.0,
+                        0.0
+                    ],
+                    [
+                        -7.5,
+                        7.8,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "9",
+                "pos": [
+                    -16.1,
+                    2.3,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        0.4,
+                        11.2,
+                        0.0
+                    ],
+                    [
+                        -16.1,
+                        2.3,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "10",
+                "pos": [
+                    0.1,
+                    11.2,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        16.4,
+                        -7.9,
+                        0.0
+                    ],
+                    [
+                        0.1,
+                        11.2,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "11",
+                "pos": [
+                    -15.5,
+                    11.2,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        7.4,
+                        11.0,
+                        0.0
+                    ],
+                    [
+                        15.5,
+                        11.2,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "12",
+                "pos": [
+                    7.5,
+                    -7.8,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        7.4,
+                        11.0,
+                        0.0
+                    ],
+                    [
+                        7.5,
+                        -7.8,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "13",
+                "pos": [
+                    7.5,
+                    11.2,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        0.0,
+                        11.3,
+                        0.0
+                    ],
+                    [
+                        7.5,
+                        11.2,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            },
+            {
+                "name": "14",
+                "pos": [
+                    -5.5,
+                    11.0,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        0.0,
+                        11.3,
+                        0.0
+                    ],
+                    [
+                        -4.5,
+                        11.2,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            }
+        ],
+        "interactive": []
+    }
+}
