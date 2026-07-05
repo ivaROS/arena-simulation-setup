@@ -1,0 +1,21 @@
+{
+    "robots": [
+        {
+            "start": [
+                -8.0,
+                6.6,
+                0.0
+            ],
+            "goal": [
+                27.5,
+                -4.0,
+                0.0
+            ]
+        }
+    ],
+    "obstacles": {
+        "static": [],
+        "dynamic": [],
+        "interactive": []
+    }
+}
