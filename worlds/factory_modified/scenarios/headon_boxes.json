@@ -1,0 +1,41 @@
+{
+    "robots": [
+        {
+            "start": [
+                10.0,
+                1.5,
+                0.0
+            ],
+            "goal": [
+                24.0,
+                1.0,
+                0.0
+            ]
+        }
+    ],
+    "obstacles": {
+        "static": [],
+        "dynamic": [
+            
+            {
+                "name": "agent5",
+                "pos": [
+                    22.0,
+                    1.0,
+                    0.0
+                ],
+                "type": "adult",
+                "model": "person_single_circle",
+                "waypoints": [
+                    [
+                        17.0,
+                        1.0,
+                        0.0
+                    ]
+                ],
+                "waypoint_mode": 1
+            }
+        ],
+        "interactive": []
+    }
+}
