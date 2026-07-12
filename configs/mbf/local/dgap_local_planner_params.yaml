@@ -8,7 +8,7 @@ planner_frequency: 0.0
 
 DynamicGapPlannerROS:
   # PlanningMode
-  holonomic: false
+  holonomic: true
   projection_operator: true
   egocircle_prop_cheat: false
   gap_feasibility_check: true
@@ -34,11 +34,11 @@ DynamicGapPlannerROS:
   # Trajectory
   integrate_maxt: 5.0 # 5.0 # 7.5 # 
   integrate_stept: 0.5
-  max_pose_to_scan_dist: 0.5
+  max_pose_to_scan_dist: 0.8
   Q: 1.0
   pen_exp_weight: 5.0
   inf_ratio: 1.0
-  Q_f: 1.0 # for fmm: 4.0
+  Q_f: 0.05 # for fmm: 4.0
 
   # ProjectionParam
   k_po_x: 1.0

@@ -387,16 +387,16 @@
       {
         "name": "agent16",
         "pos": [
-          12.4,
-          14.1,
+          12.12,
+          15.27,
           0.0
         ],
         "type": "adult",
         "model": "person_single_circle",
         "waypoints": [
           [
-            12.4,
-            14.1,
+            12.12,
+            15.27,
             0.0
           ],
           [
@@ -617,16 +617,16 @@
       {
         "name": "agent26",
         "pos": [
-          11.1,
-          13.9,
+          10.81,
+          14.64,
           0.0
         ],
         "type": "adult",
         "model": "person_single_circle",
         "waypoints": [
           [
-            11.1,
-            13.9,
+            10.81,
+            14.64,
             0.0
           ],
           [
