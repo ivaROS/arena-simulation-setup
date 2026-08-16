@@ -1,0 +1,36 @@
+map5 @ 3.0x - 750x750 px @ 0.1 m/px, origin (-23.75, -22.5), 75 x 75 m
+pedsim obstacles regenerated at 0.1 m (5000 cells)
+
+RELOCATED ROBOT POINTS (22)
+12.json                                 robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+12_static.json                          robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+17.json                                 robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+17_static.json                          robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+2.json                                  robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+22.json                                 robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+22_static.json                          robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+27.json                                 robot[0].start      (30, 12) -> (30.0, 11.45)  0.55 m
+2_static.json                           robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+7.json                                  robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+7_static.json                           robot[0].goal       (30, 12) -> (30.0, 11.45)  0.55 m
+CS5_redirecting.json                    robot[0].goal       (28.5, 12) -> (28.5, 11.45)  0.55 m
+gap_propagation_example.json            robot[0].goal       (28.0, 12.0) -> (27.7, 11.65)  0.46 m
+gap_propagation_example2.json           robot[0].goal       (28.0, 12.0) -> (27.7, 11.65)  0.46 m
+highly_social.json                      robot[0].goal       (-1.0, -1.0) -> (-1.0, -0.35)  0.65 m
+marl.json                               robot[0].goal       (31.073728818013, 23.614529572663127) -> (30.6, 22.55)  1.17 m
+marl.json                               robot[4].goal       (25.576163801027963, 23.54404796988127) -> (24.9, 22.85)  0.97 m
+marl.json                               robot[7].goal       (30.146818089333973, 23.16670627326246) -> (30.1, 22.55)  0.62 m
+marl.json                               robot[8].goal       (28.010574415752707, 23.16670627326246) -> (28.0, 22.55)  0.62 m
+marl.json                               robot[13].goal      (30.18712457374117, 12.727326811799266) -> (30.2, 11.45)  1.28 m
+orig_5.json                             robot[0].goal       (6.0, 21.8) -> (6.0, 22.45)  0.65 m
+vision.json                             robot[0].goal       (28.0, 12.0) -> (27.7, 11.65)  0.46 m
+
+REMOVED PEDESTRIANS (8)
+0_50ped.json                            agent agent28         conflict at (28, 12)
+0_50ped.json                            agent agent29         conflict at (6, 20)
+0_50ped.json                            agent agent48         conflict at (4, 2)
+0_50ped_middle_start.json               agent agent28         conflict at (28, 12)
+0_50ped_middle_start.json               agent agent29         conflict at (6, 20)
+CS6_interrupting.json                   agent agent1          conflict at (7.5, 21)
+blocked_corridors.json                  agent 20              conflict at (7.09, -3.0)
+orig_5.json                             agent 3               conflict at (30.1, 12.2)

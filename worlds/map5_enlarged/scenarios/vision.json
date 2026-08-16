@@ -1,0 +1,110 @@
+{
+  "robots": [
+    {
+      "start": [
+        15.0,
+        12.0,
+        0.0
+      ],
+      "goal": [
+        27.7,
+        11.65,
+        0.0
+      ]
+    }
+  ],
+  "obstacles": {
+    "static": [
+      {
+        "name": "shelf0",
+        "model": "shelf",
+        "pos": [
+          17.5,
+          9.5,
+          2.0
+        ]
+      },
+      {
+        "name": "shelf1",
+        "model": "shelf",
+        "pos": [
+          11.0,
+          12.0,
+          0.0
+        ]
+      }
+    ],
+    "dynamic": [
+      {
+        "name": "agent0",
+        "pos": [
+          9.0,
+          17.0,
+          0.0
+        ],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [
+          [
+            23.0,
+            10.0,
+            0.0
+          ],
+          [
+            9.0,
+            17.0,
+            0.0
+          ]
+        ],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent1",
+        "pos": [
+          23.0,
+          12.0,
+          0.0
+        ],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [
+          [
+            9.0,
+            19.0,
+            0.0
+          ],
+          [
+            23.0,
+            12.0,
+            0.0
+          ]
+        ],
+        "waypoint_mode": 1
+      },
+      {
+        "name": "agent3",
+        "pos": [
+          11.0,
+          16.0,
+          0.0
+        ],
+        "type": "adult",
+        "model": "person_single_circle",
+        "waypoints": [
+          [
+            14.0,
+            6.0,
+            0.0
+          ],
+          [
+            11.0,
+            16.0,
+            0.0
+          ]
+        ],
+        "waypoint_mode": 1
+      }
+    ],
+    "interactive": []
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <scene>
+      <ambient>0.0 0.0 0.0 1.0</ambient>
+      <shadows>0</shadows>
+    </scene>
+    <model name="my_mesh">
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <pose frame="">-23.75 -22.5 1 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>//map.dae</uri>
+              <scale>3.0 3.0 1.0</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision1">
+          <pose frame="">-23.75 -22.5 1 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>//map.dae</uri>
+              <scale>3.0 3.0 1.0</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+  </world>
+</sdf>
