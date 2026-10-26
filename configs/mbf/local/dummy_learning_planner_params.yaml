@@ -1,0 +1,7 @@
+controllers:
+  - name: TrajectoryPlannerROS
+    type: base_local_planner/TrajectoryPlannerROS
+
+TrajectoryPlannerROS:
+  odom_topic: odom
+  max_vel_x: 0.1

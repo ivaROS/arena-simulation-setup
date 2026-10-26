@@ -1,0 +1,4 @@
+{
+  "robots": [{"start": [5.0, 5.0, 0.0], "goal": [10.0, 5.0, 0.0]}],
+  "obstacles": {"static": [], "dynamic": [], "interactive": []}
+}

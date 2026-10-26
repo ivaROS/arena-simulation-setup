@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="model" />
+  <arg name="speed" />
+  <arg name="namespace" />
+  <arg name="frame" />
+
+  <!-- RTO's existing costmap configuration consumes modified_scan. -->
+  <node pkg="mod_rto_scan" type="mod_rto_scan" name="mod_rto_scan" output="log" />
+
+  <group ns="move_base_flex">
+    <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/dummy_learning_planner_params.yaml"
+              command="load" />
+    <param name="base_local_planner" value="TrajectoryPlannerROS" />
+  </group>
+
+  <node pkg="arena_bringup" type="dummy_learning_planner.py"
+        name="dummy_learning_planner" output="screen" />
+  <!-- Replaces topic_tools relay only for this planner: the C++ adapter has no timeout. -->
+  <node pkg="arena_bringup" type="dummy_cmd_vel_relay.py"
+        name="mbf_cmd_vel_relay" output="screen" required="true" />
+</launch>
