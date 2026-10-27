@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="model" />
+  <arg name="speed" />
+  <arg name="namespace" />
+  <arg name="frame" />
+  <node pkg="mod_rto_scan" type="mod_rto_scan" name="mod_rto_scan" output="log" />
+  <group ns="move_base_flex">
+    <rosparam file="$(find arena_simulation_setup)/configs/mbf/local/cfm_mppi_params.yaml"
+              command="load" />
+    <param name="base_local_planner" value="TrajectoryPlannerROS" />
+  </group>
+  <node pkg="arena_bringup" type="cfm_mppi_continuous.py" name="cfm_mppi_continuous" output="screen">
+    <param name="cfm_repo" value="/home/azaro/cfm_mppi" />
+    <param name="cfm_python" value="/home/azaro/miniconda3/envs/cfm_mppi/bin/python" />
+    <param name="device" value="cpu" />
+    <param name="samples" value="20" />
+  </node>
+  <node pkg="arena_bringup" type="cfm_cmd_vel_relay.py" name="mbf_cmd_vel_relay"
+        output="screen" required="true" />
+</launch>
